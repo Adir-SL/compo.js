@@ -15,9 +15,11 @@ function loadPage() {
 */
 
 function findTags(
-    var x = document.getElementsByClassName("myDiv");
+    var x = document.body.children;
     var i;
     for (i = 0; i < x.length; i++) {
-        x[i].style.left = "10%";
+        if(x[i].tagName.includes("-") == true){
+            console.log(x[i].tagName);
+        }
     }
 )
