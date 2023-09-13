@@ -18,7 +18,7 @@ function findTags(){
     var x = document.body.children;
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].tagName.includes("-") == true){
+        if(x[i].tagName.includes("-") == false){
             console.log(x[i].tagName);
         }
     }
