@@ -14,7 +14,7 @@ function loadPage() {
     loadPage();
 */
 
-function findTags(
+function findTags(){
     var x = document.body.children;
     var i;
     for (i = 0; i < x.length; i++) {
@@ -22,4 +22,4 @@ function findTags(
             console.log(x[i].tagName);
         }
     }
-)
+}
