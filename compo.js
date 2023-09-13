@@ -13,3 +13,11 @@ function loadPage() {
     }
     loadPage();
 */
+
+function findTags(
+    var x = document.getElementsByClassName("myDiv");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.left = "10%";
+    }
+)
