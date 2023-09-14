@@ -23,7 +23,7 @@ function findTags(){
 
             const box = x[i];
 
-            fetch('hero.html')
+            fetch(x[i].tagName + '.html')
                 .then(response => response.text())
                 .then(html => {
                 box.innerHTML = html;
