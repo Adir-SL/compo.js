@@ -28,8 +28,6 @@ function findTags(){
                 .catch(error => {
                 console.log(error);
                 });
-
-                console.log(x[i].innerHTML)
         }
     }
 }
