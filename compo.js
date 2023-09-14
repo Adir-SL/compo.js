@@ -24,4 +24,8 @@ function findTags(){
     }
 }
 
+function replaceTags(){
+    
+}
+
 findTags();
