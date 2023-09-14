@@ -19,7 +19,7 @@ function findTags(){
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].tagName.includes("-") == true){
-            console.log(x[i].tagName);
+            // console.log(x[i].tagName);
         }
     }
 }
