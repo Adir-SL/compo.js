@@ -20,7 +20,6 @@ function findTags(){
     for (i = 0; i < x.length; i++) {
         if(x[i].tagName.includes("-") == true){
             const box = x[i];
-
             fetch(x[i].tagName + '.html')
                 .then(response => response.text())
                 .then(html => {
