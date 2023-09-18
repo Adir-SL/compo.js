@@ -15,7 +15,8 @@ function loadPage() {
 */
 
 function findTags(){
-    var x = document.body.children;
+    // var x = document.body.children;
+    var x = document.querySelectorAll("*");
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].tagName.includes("-") == true){
@@ -36,4 +37,5 @@ function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
 }
 // document.body.style.border = "1px solid red";
+console.log(document.querySelectorAll("*"));
 findTags();
