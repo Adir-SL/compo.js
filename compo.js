@@ -35,5 +35,5 @@ function findTags(){
 function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
 }
-
+console.log("compo loaded");
 findTags();
