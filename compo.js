@@ -36,6 +36,5 @@ function findTags(){
 function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
 }
-// document.body.style.border = "1px solid red";
-console.log(document.querySelectorAll("*"));
+
 findTags();
