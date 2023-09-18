@@ -38,3 +38,4 @@ function replaceProps(){
 }
 // document.body.style.border = "1px solid red";
 console.log(document.querySelectorAll("*"));
+findTags();
