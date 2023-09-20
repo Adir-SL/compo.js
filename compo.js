@@ -38,7 +38,6 @@ function replaceProps(){
 }
 
 function editStyles(){
-    // document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1);
     console.log(document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1))
 
     // Take existing styles and enclose them inside their parent tags to scope them eg: button{} == button-primary button{}
