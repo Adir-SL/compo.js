@@ -11,3 +11,6 @@ button:hover{
     background-color: white;
     border: 1px solid lightblue;
 }
+button:focus{
+    box-shadow: 0 0 0 2px black inset;
+}
