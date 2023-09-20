@@ -37,4 +37,8 @@ function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
 }
 
+function editStyles(){
+    document.styleSheets[0].href;
+}
+
 findTags();
