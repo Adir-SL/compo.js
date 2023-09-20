@@ -1,4 +1,4 @@
-button-primary button{
+button{
     background-color: lightblue;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -7,7 +7,7 @@ button-primary button{
     font-family: sans-serif;
     transition: all 200ms linear;
 }
-button-primary button:hover{
+button:hover{
     background-color: white;
     border: 1px solid lightblue;
 }
