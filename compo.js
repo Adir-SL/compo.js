@@ -38,7 +38,7 @@ function replaceProps(){
 }
 
 function editStyles(){
-    document.styleSheets[0].href;
+    document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1);
 }
 
 findTags();
