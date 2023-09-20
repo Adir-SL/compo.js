@@ -1,6 +1,13 @@
 button-primary button{
     background-color: lightblue;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
     outline: none;
     padding: 8px 24px;
+    font-family: sans-serif;
+    transition: all 200ms linear;
+}
+button-primary button:hover{
+    background-color: white;
+    border: 1px solid lightblue;
 }
