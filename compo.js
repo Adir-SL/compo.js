@@ -22,7 +22,6 @@ function findTags(){
         if(x[i].tagName.includes("-") == true){
             const box = x[i];
             tempTag = x[i].tagName.toLocaleLowerCase();
-            tempTag = x[i].tagName;
             console.log(tempTag);
             fetch(tempTag + '.html')
                 .then(response => response.text())
