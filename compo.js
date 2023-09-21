@@ -39,9 +39,26 @@ function replaceProps(){
 
 function editStyles(){
     // console.log(document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1,-4))
-    temp = document.styleSheets[0].cssRules[0].selectorText;
-    tempSelector = document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1,-4);
-    document.styleSheets[0].cssRules[0].selectorText = tempSelector + " " + temp;
+
+    var x = document.styleSheets;
+    var i;
+    for (i = 0; i < x.length; i++) {
+        tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
+        if(tempSelector.includes("-") == true){
+            var y = x[i].cssRules;
+            var j;
+            for (j = 0; i < y.length; j++) {
+                temp = y[j].selectorText;
+                console.log(x[i]);
+                console.log(y[j]);
+                y[j].selectorText = tempSelector + " " + temp;
+            }
+        }
+    }
+
+    // temp = document.styleSheets[0].cssRules[0].selectorText;
+    // tempSelector = document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1,-4);
+    // document.styleSheets[0].cssRules[0].selectorText = tempSelector + " " + temp;
 
     // Take existing styles and enclose them inside their parent tags to scope them eg: button{} == button-primary button{}
 }
