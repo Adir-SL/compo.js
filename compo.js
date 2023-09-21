@@ -18,7 +18,6 @@ function findTags(){
     // var x = document.body.children;
     var x = document.querySelectorAll("*");
     var i;
-    console.log(x.length);
     for (i = 0; i < x.length; i++) {
         if(x[i].tagName.includes("-") == true){
             const box = x[i];
