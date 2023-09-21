@@ -1,6 +1,7 @@
 button{
     background-color: lightblue;
     border: 1px solid transparent;
+    color: unset;
     border-radius: 8px;
     outline: none;
     padding: 8px 24px;
