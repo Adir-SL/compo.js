@@ -62,4 +62,4 @@ function editStyles(){
 }
 
 findTags();
-// setTimeout(function(){ editStyles(); }, 200);
+setTimeout(function(){ editStyles(); }, 200);
