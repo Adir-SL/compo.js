@@ -47,4 +47,4 @@ function editStyles(){
 }
 
 findTags();
-editStyles();
+setTimeout(function(){ editStyles(); }, 200);
