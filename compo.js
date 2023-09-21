@@ -18,6 +18,7 @@ function findTags(){
     // var x = document.body.children;
     var x = document.querySelectorAll("*");
     var i;
+    console.log(x.length);
     for (i = 0; i < x.length; i++) {
         if(x[i].tagName.includes("-") == true){
             const box = x[i];
@@ -31,6 +32,10 @@ function findTags(){
                 .catch(error => {
                 console.log(error);
                 });
+        }
+        if(i == x.length-1){
+            // alert('done');
+            setTimeout(function(){ editStyles(); }, 200);
         }
     }
 }
@@ -64,4 +69,3 @@ function editStyles(){
 }
 
 findTags();
-setTimeout(function(){ editStyles(); }, 200);
