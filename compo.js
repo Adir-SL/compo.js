@@ -33,7 +33,6 @@ function findTags(){
                 });
         }
         if(i == x.length-1){
-            // alert('done');
             setTimeout(function(){ editStyles(); }, 500);
         }
     }
