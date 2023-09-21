@@ -49,8 +49,6 @@ function editStyles(){
             var j;
             for (j = 0; i < y.length; j++) {
                 temp = y[j].selectorText;
-                console.log(x[i]);
-                console.log(y[j]);
                 y[j].selectorText = tempSelector + " " + temp;
             }
         }
