@@ -26,8 +26,6 @@ function replaceProps(){
 }
 
 function editStyles(){
-    // console.log(document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1,-4))
-
     var x = document.styleSheets;
     var i;
     for (i = 0; i < x.length; i++) {
