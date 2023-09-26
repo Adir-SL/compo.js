@@ -40,7 +40,7 @@ function replaceProps(){
             }
             if(varRes !== ''){
                 console.log(varTemp +","+varRes+"  ("+x[i].tagName+")");
-                x[i].innerHTML = x[i].innerHTML.replace(varTemp, varRes);
+                x[i].innerHTML = x[i].innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
                 // - Add support for replacing multiple times.
             }
 
