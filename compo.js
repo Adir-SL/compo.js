@@ -55,7 +55,6 @@ function replaceProps(){
 }
 
 function validProps(y){
-    // console.log(y.attributes);
     var z = y.attributes;
     var w;
     for (w = 0; w < z.length; w++) {
@@ -64,8 +63,6 @@ function validProps(y){
         y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
         console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
     }
-    // console.log(y.innerHTML);
-    
 }
 
 function editStyles(){
