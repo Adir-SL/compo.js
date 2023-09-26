@@ -33,7 +33,7 @@ function replaceProps(){
             varTemp = varTemp.slice(varTemp.indexOf("{"),varTemp.indexOf("}")+1);
             varRes = x[i].outerHTML;
             varRes = varRes.slice(varRes.indexOf("}")+2,varRes.indexOf(">"));
-            // - Needs to support multiple {vars} in the same element
+            // - Needs to support multiple {vars} in the same element.
 
             if(varRes.includes('"') == true){
                 varRes = varRes.replace(/"/g, "");
