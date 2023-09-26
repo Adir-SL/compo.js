@@ -34,9 +34,11 @@ function replaceProps(){
             if(varRes.includes('"') == true){
                 varRes = varRes.replace(/"/g, "");
             }
-
-            x[i].innerHTML = x[i].innerHTML.replace(varTemp, varRes);
-            console.log(varTemp +","+varRes)
+            if(varRes !== ''){
+                console.log(varTemp +","+varRes+"  ("+x[i].tagName+")");
+                x[i].innerHTML = x[i].innerHTML.replace(varTemp, varRes);
+            }
+            
 
             // var z = x[i].children;
             // var e;
