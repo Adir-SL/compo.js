@@ -33,6 +33,9 @@ function replaceProps(){
             varTemp = varTemp.slice(varTemp.indexOf("{"),varTemp.indexOf("}")+1);
             varRes = x[i].outerHTML;
             varRes = varRes.slice(varRes.indexOf("}")+2,varRes.indexOf(">"));
+
+            if(varRes.includes(" ") == true){}
+
             // - Needs to support multiple {vars} in the same element.
 
             if(varRes.includes('"') == true){
