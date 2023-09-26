@@ -39,12 +39,6 @@ function editStyles(){
             }
         }
     }
-
-    // temp = document.styleSheets[0].cssRules[0].selectorText;
-    // tempSelector = document.styleSheets[0].href.slice(document.styleSheets[0].href.lastIndexOf('/')+1,-4);
-    // document.styleSheets[0].cssRules[0].selectorText = tempSelector + " " + temp;
-
-    // Take existing styles and enclose them inside their parent tags to scope them eg: button{} == button-primary button{}
 }
 
 findTags();
