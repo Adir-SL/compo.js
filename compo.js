@@ -31,7 +31,9 @@ function replaceProps(){
             varTemp = varTemp.slice(varTemp.indexOf("{")+1,varTemp.indexOf("}"));
             varRes = x[i].outerHTML;
             varRes = varRes.slice(varRes.indexOf("}")+2,varRes.indexOf(">"));
-            if(varRes.includes('"') == true){}
+            if(varRes.includes('"') == true){
+                varRes = varRes.replace(/"/g, "");
+            }
         }
     }
 }
