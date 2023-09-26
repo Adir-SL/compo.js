@@ -55,15 +55,17 @@ function replaceProps(){
 }
 
 function validProps(y){
-    console.log(y.attributes);
+    // console.log(y.attributes);
     var z = y.attributes;
     var w;
     for (w = 0; w < z.length; w++) {
         varTemp = z[w].nodeName;
         varRes = z[w].nodeValue;
+        y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
+        console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
     }
     // console.log(y.innerHTML);
-    y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
+    
 }
 
 function editStyles(){
