@@ -26,7 +26,9 @@ function replaceProps(){
     var x = document.querySelectorAll("*");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].outerHTML.includes("{") == true){}
+        if(x[i].outerHTML.includes("{") == true){
+            varTemp = x[i].outerHTML;
+        }
     }
 }
 
