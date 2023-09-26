@@ -38,13 +38,6 @@ function replaceProps(){
                 console.log(varTemp +","+varRes+"  ("+x[i].tagName+")");
                 x[i].innerHTML = x[i].innerHTML.replace(varTemp, varRes);
             }
-            
-
-            // var z = x[i].children;
-            // var e;
-            // for (e = 0; e < z.length; e++) {
-            //     z[e].
-            // }
 
         }
     }
