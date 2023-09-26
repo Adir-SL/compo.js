@@ -23,6 +23,11 @@ function findTags(){
 
 function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
+    var x = document.querySelectorAll("*");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        // if(x[i].)
+    }
 }
 
 function editStyles(){
