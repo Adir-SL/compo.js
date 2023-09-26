@@ -22,6 +22,22 @@ function findTags(){
     }
 }
 
+function editStyles(){
+    var x = document.styleSheets;
+    var i;
+    for (i = 0; i < x.length; i++) {
+        tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
+        if(tempSelector.includes("-") == true){
+            var y = x[i].cssRules;
+            var j;
+            for (j = 0; i < y.length; j++) {
+                temp = y[j].selectorText;
+                y[j].selectorText = tempSelector + " " + temp;
+            }
+        }
+    }
+}
+
 function replaceProps(){
     var x = document.querySelectorAll("*");
     var i;
@@ -40,22 +56,6 @@ function validProps(y){
         varRes = z[w].nodeValue;
         y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
         console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
-    }
-}
-
-function editStyles(){
-    var x = document.styleSheets;
-    var i;
-    for (i = 0; i < x.length; i++) {
-        tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
-        if(tempSelector.includes("-") == true){
-            var y = x[i].cssRules;
-            var j;
-            for (j = 0; i < y.length; j++) {
-                temp = y[j].selectorText;
-                y[j].selectorText = tempSelector + " " + temp;
-            }
-        }
     }
 }
 
