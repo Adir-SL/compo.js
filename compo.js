@@ -17,6 +17,7 @@ function findTags(){
         }
         if(i == x.length-1){
             setTimeout(function(){ editStyles(); }, 500);
+            setTimeout(function(){ replaceProps(); }, 300);
         }
     }
 }
