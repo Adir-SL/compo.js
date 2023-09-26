@@ -24,32 +24,11 @@ function findTags(){
 
 function replaceProps(){
     // Replace all acceptable props from any element's parent. Scan the entire body for those.
-
     var x = document.querySelectorAll("*");
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].outerHTML.slice(0,x[i].outerHTML.indexOf(">")+1).includes("{") == true){
             validProps(x[i]);
-            // varTemp = x[i].outerHTML;
-            // varTemp = varTemp.slice(varTemp.indexOf("{"),varTemp.indexOf("}")+1);
-            // varRes = x[i].outerHTML;
-            // varRes = varRes.slice(varRes.indexOf("}")+2,varRes.indexOf(">"));
-
-            // if(varRes.includes(" ") == true){
-            //     varRes = varRes.slice(0,varRes.indexOf(" "));
-            // }
-
-            // - Needs to support multiple {vars} in the same element.
-
-            // if(varRes.includes('"') == true){
-            //     varRes = varRes.replace(/"/g, "");
-            // }
-            // if(varRes !== ''){
-            //     console.log(varTemp +","+varRes+"  ("+x[i].tagName+")");
-            //     x[i].innerHTML = x[i].innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
-            //     // - Add support for replacing multiple times.
-            // }
-
         }
     }
 }
