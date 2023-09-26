@@ -28,7 +28,7 @@ function replaceProps(){
     for (i = 0; i < x.length; i++) {
         if(x[i].outerHTML.includes("{") == true){
             varTemp = x[i].outerHTML;
-            varTemp = varTemp.slice(varTemp.indexOf("{")+1,varTemp.indexOf("}"));
+            varTemp = varTemp.slice(varTemp.indexOf("{"),varTemp.indexOf("}")+1);
             varRes = x[i].outerHTML;
             varRes = varRes.slice(varRes.indexOf("}")+2,varRes.indexOf(">"));
             if(varRes.includes('"') == true){
