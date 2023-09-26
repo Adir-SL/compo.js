@@ -35,7 +35,7 @@ function replaceProps(){
                 varRes = varRes.replace(/"/g, "");
             }
 
-            x[i].innerHTML = x[i].innerHTML.replace(/varTemp/g, varRes);
+            x[i].innerHTML = x[i].innerHTML.replace(varTemp, varRes);
             console.log(varTemp +","+varRes)
 
             // var z = x[i].children;
