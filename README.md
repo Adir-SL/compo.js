@@ -2,6 +2,9 @@
 This project is meant to enable component based workflows within simple HTML files using only vanilla JavaScript.
 
 ## Main features:
+1. Different HTML files store different components.
+2. components can be reused with different props.
+3. CSS can be scoped to the component it came from.
 
 Live Demo:
 https://adir-sl.github.io/compojs/
