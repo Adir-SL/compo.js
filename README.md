@@ -13,3 +13,8 @@ Always put the ```<script>``` tag linking to it at the end of your ```<body>``` 
 ```HTML
 <script src="https://adir-sl.github.io/compojs/compo.js"></script>
 ```
+
+OR
+```HTML
+<script src="compo.js"></script>
+```
