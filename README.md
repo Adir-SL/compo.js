@@ -11,7 +11,7 @@ Live Demo:
 https://adir-sl.github.io/compojs/
 
 
-# Getting Started
+## Getting Started
 Download the ```compo.js``` or use it as a link to this GitHub repo.
 
 Always put the ```<script>``` tag linking to it at the **end** of your ```<body>``` tag.
