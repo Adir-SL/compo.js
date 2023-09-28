@@ -9,3 +9,7 @@ https://adir-sl.github.io/compojs/
 Download the ```compo.js``` or use it as a link to this GitHub repo.
 
 Always put the ```<script>``` tag linking to it at the end of your ```<body>``` tag.
+
+```
+<script src="https://adir-sl.github.io/compojs/compo.js"></script>
+```
