@@ -1,6 +1,8 @@
 # compo.js
 This project is meant to enable component based workflows within simple HTML files using only vanilla JavaScript.
 
+## Main features:
+
 Live Demo:
 https://adir-sl.github.io/compojs/
 
