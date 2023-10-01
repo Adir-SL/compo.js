@@ -41,3 +41,10 @@ Also the CSS coming from the file named ```button-primary.html``` should be scop
 You can also add props to change some properties in the component you're loading.
 
 All props should be inside curly brackets eg. {prop}.
+
+In your host file:
+```HTML
+<button-primary {label}="PROP">...</button-primary>
+```
+
+In your component file:
