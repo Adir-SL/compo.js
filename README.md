@@ -33,4 +33,6 @@ This library will take code like:
 <button-primary>...</button-primary>
 ```
 
-and replace it with the corresponding file named ```button-primary.html```
+and replace it with the corresponding file named ```button-primary.html```.
+
+Also the CSS coming from the file named ```button-primary.html``` should be scoped to not affect other buttons.
