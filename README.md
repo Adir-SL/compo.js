@@ -26,3 +26,4 @@ OR
 ```
 
 ## Insturctions
+All custom tags should be hyphenated eg. button-primary, custom-input, radoi-group etc.
