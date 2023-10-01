@@ -44,7 +44,10 @@ All props should be inside curly brackets eg. {prop}.
 
 In your host file:
 ```HTML
-<button-primary {label}="PROP">...</button-primary>
+<button-primary {label}="RESULT">...</button-primary>
 ```
 
 In your component file:
+```HTML
+<button>{label}</button>
+```
