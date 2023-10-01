@@ -54,4 +54,4 @@ In your component file:
 <button>{label}</button>
 ```
 
-This example
+This example will result in 3 buttons with numbered labels, all loaded from the same component file (button-primary.html).
