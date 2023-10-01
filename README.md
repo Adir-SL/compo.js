@@ -25,7 +25,7 @@ OR
 <script src="compo.js"></script>
 ```
 
-## Insturctions
+## Basic Usage
 All custom tags should be hyphenated eg. button-primary, custom-input, radoi-group etc.
 
 This library will take code like:
@@ -36,3 +36,4 @@ This library will take code like:
 and replace it with the corresponding file named ```button-primary.html```.
 
 Also the CSS coming from the file named ```button-primary.html``` should be scoped to not affect other buttons.
+
