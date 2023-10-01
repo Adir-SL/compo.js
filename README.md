@@ -27,3 +27,8 @@ OR
 
 ## Insturctions
 All custom tags should be hyphenated eg. button-primary, custom-input, radoi-group etc.
+
+This library will convert code like:
+```HTML
+<button-primary>...</button-primary>
+```
