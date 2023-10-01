@@ -24,3 +24,5 @@ OR
 ```HTML
 <script src="compo.js"></script>
 ```
+
+## Insturctions
