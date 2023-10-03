@@ -65,3 +65,7 @@ This library is still under active development.
 If you find any bugs or issues, please let me know.
 
 It is free to use and being maintained by a single developer in his free time.
+
+## Copyright and License
+
+Code and documentation copyright 2023 Adir-SL. Code released under the MIT license.
