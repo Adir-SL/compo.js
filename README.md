@@ -63,3 +63,5 @@ This will result in 3 buttons with numbered labels, all loaded from the same com
 This library is still under active development.
 
 If you find any bugs or issues, please let me know.
+
+It is free to use and being maintained by a single developer in his free time.
