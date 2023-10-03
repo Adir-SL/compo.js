@@ -68,4 +68,4 @@ It is free to use and being maintained by a single developer in his free time.
 
 ## Copyright and License
 
-Code and documentation copyright 2023 Adir-SL. Code released under the [MIT license](https://adir-sl.github.io/compojs/LICENSE.md).
+Code and documentation copyright 2023 Adir-SL. Code released under the [MIT license](LICENSE.md).
