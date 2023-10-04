@@ -30,7 +30,7 @@ function findTags() {
         if (x[i].tagName.includes("-")) {
             const box = x[i];
             const tempTag = x[i].tagName.toLowerCase();
-            console.log(tempTag);
+            // console.log(tempTag);
             
             // Push each fetch promise to the promises array
             promises.push(
@@ -59,10 +59,11 @@ function editStyles(){
     var i;
     for (i = 0; i < x.length; i++) {
         tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
+        console.log(i + " styles: " + tempSelector)
         if(tempSelector.includes("-") == true){
             var y = x[i].cssRules;
             var j;
-            for (j = 0; i < y.length; j++) {
+            for (j = 0; j < y.length; j++) {
                 temp = y[j].selectorText;
                 y[j].selectorText = tempSelector + " " + temp;
             }
@@ -87,7 +88,7 @@ function validProps(y){
         varTemp = z[w].nodeName;
         varRes = z[w].nodeValue;
         y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
-        console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
+        // console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
     }
 }
 
