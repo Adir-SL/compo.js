@@ -1,26 +1,4 @@
-// function findTags(){
-//     var x = document.querySelectorAll("*");
-//     var i;
-//     for (i = 0; i < x.length; i++) {
-//         if(x[i].tagName.includes("-") == true){
-//             const box = x[i];
-//             tempTag = x[i].tagName.toLocaleLowerCase();
-//             console.log(tempTag);
-//             fetch(tempTag + '.html')
-//                 .then(response => response.text())
-//                 .then(html => {
-//                 box.innerHTML = html;
-//                 })
-//                 .catch(error => {
-//                 console.log(error);
-//                 });
-//         }
-//         if(i == x.length-1){
-//             setTimeout(function(){ editStyles(); }, 500);
-//             setTimeout(function(){ replaceProps(); }, 300);
-//         }
-//     }
-// }
+
 
 function findTags() {
     var x = document.querySelectorAll("*");
