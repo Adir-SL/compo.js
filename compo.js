@@ -1,26 +1,60 @@
-function findTags(){
+// function findTags(){
+//     var x = document.querySelectorAll("*");
+//     var i;
+//     for (i = 0; i < x.length; i++) {
+//         if(x[i].tagName.includes("-") == true){
+//             const box = x[i];
+//             tempTag = x[i].tagName.toLocaleLowerCase();
+//             console.log(tempTag);
+//             fetch(tempTag + '.html')
+//                 .then(response => response.text())
+//                 .then(html => {
+//                 box.innerHTML = html;
+//                 })
+//                 .catch(error => {
+//                 console.log(error);
+//                 });
+//         }
+//         if(i == x.length-1){
+//             setTimeout(function(){ editStyles(); }, 500);
+//             setTimeout(function(){ replaceProps(); }, 300);
+//         }
+//     }
+// }
+
+function findTags() {
     var x = document.querySelectorAll("*");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        if(x[i].tagName.includes("-") == true){
+    var promises = []; // Array to hold promises
+
+    for (var i = 0; i < x.length; i++) {
+        if (x[i].tagName.includes("-")) {
             const box = x[i];
-            tempTag = x[i].tagName.toLocaleLowerCase();
+            const tempTag = x[i].tagName.toLowerCase();
             console.log(tempTag);
-            fetch(tempTag + '.html')
-                .then(response => response.text())
-                .then(html => {
-                box.innerHTML = html;
-                })
-                .catch(error => {
-                console.log(error);
-                });
-        }
-        if(i == x.length-1){
-            setTimeout(function(){ editStyles(); }, 500);
-            setTimeout(function(){ replaceProps(); }, 300);
+            
+            // Push each fetch promise to the promises array
+            promises.push(
+                fetch(tempTag + '.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        box.innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    })
+            );
         }
     }
+
+    // Use Promise.all() to wait for all fetch promises to complete
+    Promise.all(promises)
+        .then(() => {
+            // All fetch operations are completed here
+            setTimeout(function(){ editStyles(); }, 100);
+            setTimeout(function(){ replaceProps(); }, 50);
+        });
 }
+
 
 function editStyles(){
     var x = document.styleSheets;
