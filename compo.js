@@ -27,7 +27,6 @@ function findTags() {
         });
 }
 
-
 function editStyles(){
     var x = document.styleSheets;
     var i;
