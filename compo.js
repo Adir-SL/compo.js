@@ -60,7 +60,7 @@ function editStyles(){
     for (i = 0; i < x.length; i++) {
         tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
         if(tempSelector.includes("-") == true){
-            fixStyles(x[i]);
+            fixStyles(x[i], tempSelector);
             // var y = x[i].cssRules;
             // var j;
             // for (j = 0; j < y.length; j++) {
@@ -71,12 +71,12 @@ function editStyles(){
     }
 }
 
-function fixStyles(z){
+function fixStyles(z, o){
     var y = z.cssRules;
     var j;
     for (j = 0; j < y.length; j++) {
         temp = y[j].selectorText;
-        y[j].selectorText = tempSelector + " " + temp;
+        y[j].selectorText = o + " " + temp;
     }
 }
 
