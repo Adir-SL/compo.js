@@ -24,7 +24,7 @@
 
 function findTags() {
     var x = document.querySelectorAll("*");
-    var promises = []; // Array to hold promises
+    var promises = [];
 
     for (var i = 0; i < x.length; i++) {
         if (x[i].tagName.includes("-")) {
