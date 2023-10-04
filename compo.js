@@ -59,7 +59,6 @@ function editStyles(){
     var i;
     for (i = 0; i < x.length; i++) {
         tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
-        console.log(i + " styles: " + tempSelector)
         if(tempSelector.includes("-") == true){
             fixStyles(x[i]);
             // var y = x[i].cssRules;
