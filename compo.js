@@ -30,9 +30,7 @@ function findTags() {
         if (x[i].tagName.includes("-")) {
             const box = x[i];
             const tempTag = x[i].tagName.toLowerCase();
-            // console.log(tempTag);
-            
-            // Push each fetch promise to the promises array
+
             promises.push(
                 fetch(tempTag + '.html')
                     .then(response => response.text())
