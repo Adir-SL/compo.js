@@ -61,13 +61,23 @@ function editStyles(){
         tempSelector = x[i].href.slice(x[i].href.lastIndexOf('/')+1,-4);
         console.log(i + " styles: " + tempSelector)
         if(tempSelector.includes("-") == true){
-            var y = x[i].cssRules;
-            var j;
-            for (j = 0; j < y.length; j++) {
-                temp = y[j].selectorText;
-                y[j].selectorText = tempSelector + " " + temp;
-            }
+            fixStyles(x[i]);
+            // var y = x[i].cssRules;
+            // var j;
+            // for (j = 0; j < y.length; j++) {
+            //     temp = y[j].selectorText;
+            //     y[j].selectorText = tempSelector + " " + temp;
+            // }
         }
+    }
+}
+
+function fixStyles(z){
+    var y = z.cssRules;
+    var j;
+    for (j = 0; j < y.length; j++) {
+        temp = y[j].selectorText;
+        y[j].selectorText = tempSelector + " " + temp;
     }
 }
 
