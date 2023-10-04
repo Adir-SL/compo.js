@@ -48,7 +48,6 @@ function findTags() {
 
     Promise.all(promises)
         .then(() => {
-            // All fetch operations are completed here
             setTimeout(function(){ editStyles(); }, 100);
             setTimeout(function(){ replaceProps(); }, 50);
         });
