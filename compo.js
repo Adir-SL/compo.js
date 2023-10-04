@@ -1,5 +1,3 @@
-
-
 function findTags() {
     var x = document.querySelectorAll("*");
     var promises = [];
