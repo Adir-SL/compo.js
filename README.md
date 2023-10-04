@@ -51,7 +51,7 @@ In your host file:
 <button-primary {label}="button-3">...</button-primary>
 ```
 
-In your component file:
+In your component file (named ```button-primary.html```):
 ```HTML
 <button>{label}</button>
 ```
