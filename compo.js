@@ -89,7 +89,6 @@ function validProps(y){
         varTemp = z[w].nodeName;
         varRes = z[w].nodeValue;
         y.innerHTML = y.innerHTML.replace(new RegExp(varTemp, 'g'), varRes);
-        // console.log(varTemp + " : " + varRes + "("+y.attributes.length+")");
     }
 }
 
