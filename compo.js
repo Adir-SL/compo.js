@@ -46,7 +46,6 @@ function findTags() {
         }
     }
 
-    // Use Promise.all() to wait for all fetch promises to complete
     Promise.all(promises)
         .then(() => {
             // All fetch operations are completed here
