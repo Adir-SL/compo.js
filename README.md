@@ -4,7 +4,7 @@
 This project is meant to enable component based workflows within simple HTML files using only vanilla JavaScript.
 
 Live Demo:
-https://adir-sl.github.io/compojs/
+https://adir-sl.github.io/compo-demo
 
 ## Main features:
 1. Different HTML files store different components.
