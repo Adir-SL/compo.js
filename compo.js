@@ -22,8 +22,8 @@ function findTags() {
 
     Promise.all(promises)
         .then(() => {
-            setTimeout(function(){ editStyles(); }, 100);
-            setTimeout(function(){ replaceProps(); }, 50);
+            setTimeout(function(){ editStyles(); }, 1000);
+            setTimeout(function(){ replaceProps(); }, 10);
         });
 }
 
