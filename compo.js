@@ -22,7 +22,7 @@ function findTags() {
 
     Promise.all(promises)
         .then(() => {
-            setTimeout(function(){ editStyles(); }, 1000);
+            setTimeout(function(){ editStyles(); }, 500);
             setTimeout(function(){ replaceProps(); }, 10);
         });
 }
