@@ -48,11 +48,11 @@ function fixStyles(z, o){
 }
 
 function replaceProps(){
-    var x = document.querySelectorAll("*");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        if(x[i].outerHTML.slice(0,x[i].outerHTML.indexOf(">")+1).includes("{") == true){
-            validProps(x[i]);
+    var t = document.querySelectorAll("*");
+    var b;
+    for (b = 0; b < t.length; b++) {
+        if(t[b].outerHTML.slice(0,t[b].outerHTML.indexOf(">")+1).includes("{") == true){
+            validProps(t[b]);
         }
     }
 }
